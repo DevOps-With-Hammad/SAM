@@ -5,3 +5,9 @@ from django.http import HttpResponse
 
 def home(request) :
     return render(request, 'index.html')
+
+
+
+
+def cart(request):
+        return  render(request, 'cart.html')
