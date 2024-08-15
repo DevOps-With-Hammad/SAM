@@ -4,6 +4,7 @@ FROM python:3.12.1-slim
 # Set the working directory in the container
 WORKDIR /app
 
+RUN yum install -y postgresql-devel
 # Copy the requirements file into the container at /app
 COPY requirements.txt /app/
 
