@@ -4,6 +4,9 @@ FROM python:3.12.1-slim
 # Set the working directory in the container
 WORKDIR /app
 
+RUN apt-get update && apt-get install -y postgresql-server-dev-all
+
+
 # Copy the requirements file into the container at /app
 COPY requirements.txt /app/
 
