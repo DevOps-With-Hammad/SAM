@@ -4,6 +4,8 @@ FROM django:onbuild
 # Set environment variables
 ENV PYTHONUNBUFFERED 1
 
+RUN pip install nltk
+
 # Upgrade pip and setuptools to ensure latest versions are used
 RUN pip install --upgrade pip setuptools
 
